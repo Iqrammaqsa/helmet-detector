@@ -8,6 +8,7 @@ from collections import defaultdict
 # Load model
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='runs/train/helmet-detector/weights/best.pt', source='github')
 
+# cap = cv2.VideoCapture("rtsp://admin:admin123@192.168.1.108:554/cam/realmonitor?channel=1&subtype=1")
 cap = cv2.VideoCapture(0)
 
 # Tracking status orang
